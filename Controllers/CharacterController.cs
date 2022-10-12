@@ -23,6 +23,7 @@ namespace EFCoreRelationshipsTutorial.Controllers
         {
             var characters = await _context.Characters
                 .Where(c => c.UserId == userId)
+                .Include(c => c.Weapon)
                 .ToListAsync();
 
             return characters;
@@ -45,6 +46,25 @@ namespace EFCoreRelationshipsTutorial.Controllers
             await _context.SaveChangesAsync();
 
             return await Get(character.UserId);
+        }
+
+        [HttpPost("weapon")]
+        public async Task<ActionResult<Character>> AddWeapon(CreateWeapon request)
+        {
+            var character = await _context.Characters.FindAsync(request.CharacterId);
+            if(character == null)
+                return NotFound();
+
+            var weapon = new Weapon {
+                Name = request.Name,
+                Damage = request.Damage,
+                Character = character
+            };
+
+            _context.Weapons.Add(weapon);
+            await _context.SaveChangesAsync();
+
+            return character;
         }
     }
 }
