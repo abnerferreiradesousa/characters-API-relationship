@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EFCoreRelationshipsTutorial.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class CharacterController : ControllerBase
     {
         public DataContext _context { get; set; }
@@ -17,14 +17,34 @@ namespace EFCoreRelationshipsTutorial.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
         public async Task<ActionResult<List<Character>>> Get(int userId)
         {
             var characters = await _context.Characters
-                .Where<Character>(c => c.UserId == userId)
+                .Where(c => c.UserId == userId)
                 .ToListAsync();
-                
-            return Ok(characters);
+
+            return characters;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<List<Character>>> Create(CreateCharacter request)
+        {
+            var user = await _context.Users.FindAsync(request.UserId);
+            if(user == null)
+                return NotFound();
+
+            var character = new Character {
+                Name = request.Name,
+                RpgClass = request.RpgClass,
+                User = user,
+            };
+
+            _context.Characters.Add(character);
+            await _context.SaveChangesAsync();
+
+            return await Get(character.UserId);
         }
     }
 }
