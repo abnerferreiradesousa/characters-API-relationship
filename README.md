@@ -14,7 +14,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Swagger
 
 
-### Rotas em construção..
+### Rotas em construção...
 
 Exemplo:
 * Busca uma todos os personagens pertencentes ao id de um usuário.
