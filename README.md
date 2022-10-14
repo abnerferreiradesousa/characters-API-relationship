@@ -1,3 +1,7 @@
+<h1 align="center">Nome do Projeto</h1>
+
+<p align="center">Escrever uma breve descrição</p>
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
