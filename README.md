@@ -6,8 +6,9 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnatrightive.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [C#]
+- [ASP.NET]
+- [SQLServer]
+- [SQLite]
+- [EntityFramework]
+- [Swagger]
