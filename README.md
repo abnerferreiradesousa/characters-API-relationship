@@ -6,9 +6,9 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [C#]
-- [ASP.NET]
-- [SQLServer]
-- [SQLite]
-- [EntityFramework]
-- [Swagger]
+- C#
+- ASP.NET
+- SQLServer
+- SQLite
+- EntityFramework
+- Swagger
