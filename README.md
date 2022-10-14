@@ -12,3 +12,18 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - SQLite
 - EntityFramework
 - Swagger
+
+
+### Rotas
+
+* Busca uma todos os personagens pertencentes ao id de um usuário.
+
+Request
+GET /Character
+
+Response
+HTTP/1.1 200 OK
+
+```[
+  
+]```
