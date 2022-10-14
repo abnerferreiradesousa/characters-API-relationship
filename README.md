@@ -14,8 +14,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Swagger
 
 
-### Rotas
+### Rotas em construção..
 
+Exemplo:
 * Busca uma todos os personagens pertencentes ao id de um usuário.
 
 Request
@@ -23,7 +24,3 @@ GET /Character
 
 Response
 HTTP/1.1 200 OK
-
-```[
-  
-]```
