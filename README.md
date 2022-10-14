@@ -1,6 +1,6 @@
 <h1 align="center">API Characters</h1>
 
-<p align="center">Este projeto trata-se de um API de personagens de um game, onde você tem um usuário(User entity) que pode jogar com vários personagens(Character entity) e que esses devem estar associados à uma única armaJ(Weapon entity) e à um ou mais feitiços(Skill entity).</p>
+<p align="center">Este projeto trata-se de um API de personagens de um game, com o propósito de implementar os relacionamentos entre as entidades(1:1, 1:N, N:N) onde você tem um usuário(User entity) que pode jogar com vários personagens(Character entity) e que esses devem estar associados à uma única arma(Weapon entity) e à um ou mais feitiços(Skill entity).</p>
 
 ### 🛠 Tecnologias
 
