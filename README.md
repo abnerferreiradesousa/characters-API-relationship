@@ -1,6 +1,6 @@
-<h1 align="center">Nome do Projeto</h1>
+<h1 align="center">API characters</h1>
 
-<p align="center">Escrever uma breve descrição</p>
+<p align="center">Este projeto trata-se de um API de personagens de um game, onde você tem um usuário(User entity) que pode jogar com vários personagens(Character entity) e que esses devem estar associados à uma única armaJ(Weapon entity) e à um ou mais feitiços(Skill entity).</p>
 
 ### 🛠 Tecnologias
 
